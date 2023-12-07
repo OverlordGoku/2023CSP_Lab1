@@ -30,12 +30,24 @@ def setupBox():
 
 # Code for 80 point version goes here
 def v80():
-   lines.goto(-490, -300)
+    lines.penup
+lines.goto(-490, -300)
+startX = -490
+startY = -300
+endX = 490
+endY = -300
+lines.goto(startX,startY)
+lines.pendown
 
+for ramp in range(63):
+        lines.goto(endX, endY)
+        lines.penup()
+        lines.goto(startX,startY)
+        startX += 98
+        endY += 63
+        lines.pendown
 
-
-
-# Code for the 90 point version goes here
+#Code for the 90 point version goes here
 def v90():
     # Calling the 80 point function - don't copy-paste from earlier method!!
     v80()
@@ -59,7 +71,7 @@ def v110():
 
 setupScreen()
 setupBox()
-
+v110()
 
 
 
