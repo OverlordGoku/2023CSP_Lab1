@@ -31,6 +31,8 @@ def setupBox():
 # Code for 80 point version goes here
 def v80():
     lines.penup
+
+
 lines.goto(-490, -300)
 startX = -490
 startY = -300
@@ -43,8 +45,8 @@ for ramp in range(63):
         lines.goto(endX, endY)
         lines.penup()
         lines.goto(startX,startY)
-        startX += 98
-        endY += 63
+        startX +=49
+        endY +=12.6
         lines.pendown
 
 #Code for the 90 point version goes here
