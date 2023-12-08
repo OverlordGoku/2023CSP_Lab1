@@ -47,7 +47,7 @@ def v80():
         lines.pendown()
         lines.goto(startX,startY)
         startX +=49
-        endY +=12.6
+        endY +=30
 
 
 #Code for the 90 point version goes here
