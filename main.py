@@ -54,9 +54,17 @@ def v80():
 def v90():
     # Calling the 80 point function - don't copy-paste from earlier method!!
     v80()
-
-
-
+    for ramp2 in range(63):
+        lines.penup()
+        startX = -490
+        startY=-300
+        endX = 490
+        endY = -300
+        lines.goto(startX,startY)
+        lines.goto(endX,endY)
+        lines.pendown()
+        startX -= 49
+        endY -= 30
 # Code for the 100 point version here
 def v100():
     # Calling the 90 point function - don't copy-paste from earlier method!!
