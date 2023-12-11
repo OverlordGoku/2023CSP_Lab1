@@ -38,7 +38,7 @@ def v80():
     endX = 490
     endY = -300
     lines.goto(startX,startY)
-    lines.pendown
+    lines.pendown()
     lines.speed(0)
     for ramp in range(63):
         lines.penup()
